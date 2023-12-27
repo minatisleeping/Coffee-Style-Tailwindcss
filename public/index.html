@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon/cf.png" sizes="16x16">
     <title>minatisleeping Coffee Style</title>
     <link href="./output.css" type="text/css" rel="stylesheet">
+    <script src="./main.js" type="text/javascript" async></script>
 </head>
 <body>
     <div id="root">
-        <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
-            <header class="py-6 mx-10">
-                <nav class="flex flex-row justify-between items-center">
+        <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
+            <header class="p-6 mx-auto">
+                <nav class="flex flex-row justify-between items-center relative">
                     <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
                         CoffeeStyle.
                     </div>
 
-                    <ul class="basis-3/6 flex items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium">
+                    <ul id="minat-top-menu" class="basis-3/6 hidden lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium">
                         <li class="minat-top-menu-item">
                             <a href="#" class="">Home</a>
                         </li>
@@ -34,12 +36,12 @@
                         <li class="minat-top-menu-item">
                             <a href="#" class="">StyleGuide</a>
                         </li>
-                        <li class="minat-top-menu-item">
-                            <a href="#" target="_blank" class="">Minatisleeping</a>
+                        <li class="minat-top-menu-item minat-top-menu-item-active">
+                            <a href="https://www.facebook.com/profile.php?id=100013008076651" target="_blank" class="">Minatisleeping</a>
                         </li>
                     </ul>
 
-                    <ul class="basis-1/6 flex justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+                    <ul class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
                         <li class="minat-top-menu-item">
                             <a href="#" class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -51,6 +53,12 @@
                             </a>
                         </li>
                     </ul>
+
+                    <div class="basis-1/6 lg:hidden flex items-center cursor-pointer px-3 sm:px-8">
+                        <svg id="minat-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
                 </nav>
 
             </header>
