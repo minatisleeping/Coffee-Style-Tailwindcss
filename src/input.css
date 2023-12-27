@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* minat = minatisleeping*/
+.minat-top-menu-item {
+    @apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:bg-light-coffee 
+    after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300;
+}
+
+.minat-icon {
+    @apply w-5 h-5 inline-block;
+}
+
+.minat-badge-circle {
+    @apply text-xs text-center rounded-full px-1.5;
+}
