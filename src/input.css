@@ -34,5 +34,9 @@
 }
 
 .minat-subheadline-label {
-    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[12px] text-center;
+    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs text-center;
+}
+
+.minat-button {
+    @apply text-center uppercase tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90;
 }
